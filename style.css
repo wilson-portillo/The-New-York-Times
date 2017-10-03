@@ -1,0 +1,299 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+body {
+  margin: 1%;
+}
+header {
+}
+li {
+  display: inline;
+}
+nav {
+  border-top: 3px solid black;
+  height: 50px;
+}
+ul {
+  margin-left: 0px;
+}
+p {
+  font-size: 14px;
+  margin: 0 3% auto;
+}
+h2 {
+  margin: 0 3% auto;
+}
+.nyTimes {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  margin: 5px 32.5% auto;
+}
+.underNY {
+  margin-left: 20%;
+}
+.navTop {
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  width: 100px;
+  font-size: 12px;
+  margin-left: 5%;
+}
+.nav {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 12px;
+  margin-left: 2%;
+}
+.burger-nav {
+  display: none;
+}
+.navItem a {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 18px;
+  margin-right: 3px;
+  color: black;
+}
+section, aside {
+  float: left;
+}
+.left {
+  width: 22.5%;
+  height: 800px;
+}
+li {
+  font-size: 14px;
+}
+.confirm {
+  font-weight: 400;
+  margin-left: 3%;
+}
+.rubio {
+  margin-top: 2px;
+  margin-left: 3%;
+  font-style: italic;
+}
+.left p {
+  font-size: 14px;
+  margin: 0 3% auto;
+}
+.president {
+  font-weight: 600;
+  margin-left: 3%;
+}
+.russia {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 34px;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+.author {
+  font-size: 12px;
+  color: darkgrey;
+  margin: 0 2% auto;
+}
+.middleTop {
+  width: 37.5%;
+  height: 600px;
+}
+.speechTrump {
+  width: 96%;
+  margin: 10px 2% auto;
+  float: left;
+}
+.videoText {
+  position: absolute;
+  top: 50%;
+  left: 27%;
+  color: white;
+  font-size: 20px;
+  width: 30%;
+}
+.middleBottom {
+  width: 100%;
+  height: 200px;
+}
+.middleBottom h2 {
+  font-size: 13.5px;
+  margin-top: 10px;
+}
+.middleBottom h5 {
+  font-size: 12px;
+  color: darkgrey;
+  margin: 0 3% auto;
+}
+.right {
+  width: 40%;
+  height: 700px;
+}
+.right h2 {
+  font-size: 16px;
+  margin: 0 3% auto;
+}
+.right h3 {
+  margin: 4px 3% auto;
+  font-size: 12px;
+}
+.right li {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.right aside > h2 {
+  font-size: 14px;
+}
+.opinion {
+  text-align: center;
+}
+.obama {
+  width: 50%;
+  height: 150px;
+}
+.drivers {
+  width: 50%;
+  height: 150px;
+}
+.modern {
+  width: 50%;
+  height: 250px;
+}
+.anti {
+  width: 50%;
+  height: 250px;
+}
+.times {
+  border: 1px solid grey;
+  width: 50%;
+  height: 100px;
+  float: left;
+}
+.cross {
+  border: 1px solid grey;
+  width: 50%;
+  height: 100px;
+  float: left;
+}
+.hyolith .sports {
+  border: 1px solid black;
+  width: 100%;
+  height: 100px;
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  header {
+    height: 100px;
+  }
+  .nav {
+    position: absolute;
+    margin-top: 30px;
+    display: block;
+  }
+  .burger-nav {
+    float: left;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-left: 80%;
+  }
+  .burger-nav img {
+    margin-left: 80%;
+    height: 40px;
+    width: 40px;
+    margin-top: 5px;
+  }
+  header nav ul {
+    overflow: hidden;
+    background-color: white;
+    height: 0;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+  header nav ul.open {
+    height: auto;
+  }
+  header nav ul li{
+    float: none;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+  }
+  header nav ul li {
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    display: block;
+    margin: 0;
+  }
+ .left, .middleTop, .middleBottom, .right, .opinion, .obama, .drivers, .modern, .anti {
+    width: 98%;
+    margin: 10px 1% auto;
+    float:none;
+  }
+  .left {
+    height: 550px;
+  }
+  .underNY, .listItem, .navTop, .middleBottom ul{
+    display: none;
+  }
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
